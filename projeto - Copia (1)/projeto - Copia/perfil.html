@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Perfil</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="res/css/bootstrap.css">
+  <link rel="stylesheet" href="res/css/estilos.css">
+  <script src="./res/js/start.js" defer></script>
+  <script src="./res/js/abaperfil.js" defer></script>
+  <script src="./res/js/abaex.js" defer></script>
+  <script src="./res/js/abatreinos.js" defer></script>
+  <script src="./res/js/fontawesome.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!-- Nav Top -->
+    <nav class="bg-light">
+      <div class="nav nav-tabs justify-content-around" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="navPerfilTab" data-toggle="tab" href="#navPerfil" role="tab"
+          aria-controls="nav-home" aria-selected="true">Perfil</a>
+        <a class="nav-item nav-link" id="navExerciciosTab" data-toggle="tab" href="#navExercicios" role="tab"
+          aria-controls="navExercicios" aria-selected="false">Exercicios</a>
+        <a class="nav-item nav-link" id="navTreinosTab" data-toggle="tab" href="#navTreinos" role="tab"
+          aria-controls="navTreinos" aria-selected="false">Treinos</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="tab-content" id="nav-tabContent">
+      <!-- Perfil -->
+      <div class="tab-pane fade show active" id="navPerfil" role="tabpanel" aria-labelledby="navPerfilTab">
+        <div class="row align-items-center">
+          <div class="col-4 p-2">
+            <img src="res/img/icone-perfil.png" class="img-fluid" alt="logo-perfil">
+          </div>
+          <div class="col-8 p-2">
+            <h5 id="nome-perfil"></h5>
+            <div class="row">
+              <div class="col-12" id="idade-perfil"></div>
+              <div class="col-4" id="peso-perfil"></div>
+              <div class="col-4" id="alt-perfil"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col-12 text-center">
+            <!-- <h3>Meu Peso</h3> -->
+          </div>
+          <div class="col-12" id="chartContainer" style="height: 250px;">
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 text-center imc">
+                <h5 class="p-0 m-0">Meu IMC</h5>
+              </div>
+              <div class="colIMC imc1"></div>
+              <div class="colIMC imc2"></div>
+              <div class="colIMC imc3"></div>
+              <div class="colIMC imc4"></div>
+              <div class="colIMC imc5"></div>
+            </div>
+          </div>
+          <div class="col-6 pr-1">
+            <a href="#" class="btn btn-info btn-block mt-2" id="atualizarPeso">Atualizar Peso</a>
+          </div>
+          <div class="col-6 pl-1">
+            <button class="btn btn-danger btn-block mt-2" id="btnExcluir">Excluir Último</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercicios -->
+      <div class="tab-pane fade" id="navExercicios" role="tabpanel" aria-labelledby="navExerciciosTab">
+        <div class="row">
+          <div class="col-12">
+            <ul id="listaExercicios" class="list-group list-group-flush border-bottom">
+            </ul>
+          </div>
+          <div class="col-12 p-2">
+            <a href="./novoex.html" class="btn btn-info btn-block">Novo Exercicio</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Treinos -->
+      <div class="tab-pane fade" id="navTreinos" role="tabpanel" aria-labelledby="navTreinosTab">
+        <div class="row">
+          <div class="col-12">
+            <ul id="listaTreinos" class="list-group list-group-flush border-bottom">
+            </ul>
+          </div>
+          <div class="col-12 p-2">
+            <a id="btnNovoTreino" href="#" class="btn btn-info btn-block">Novo Treino</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <!-- Nav Bottom -->
+    <div class="navFill"></div>
+    <div class="row fixed-bottom nav-bottom text-center nav-bg">
+      <div class="col-4"></div>
+      <div class="col-4 home"><a href="#"><i class="fas fa-home fa-2x preto"></i></a></div>
+      <div class="col-4" id="sair"><a href="#"><i class="fas fa-power-off fa-2x preto"></i></a></div>
+    </div>
+  </div>
+
+  <script src="res/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="res/js/popper.min.js"></script>
+  <script src="res/js/bootstrap.min.js"></script>
+  <script src="res/js/canvasjs.min.js"></script>
+</body>
+
+</html>

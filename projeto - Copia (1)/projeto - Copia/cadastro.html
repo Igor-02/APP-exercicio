@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cadastro</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="res/css/bootstrap.css">
+  <link rel="stylesheet" href="res/css/estilos.css">
+  <script src="./res/js/start.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js" defer></script>
+  <script src="res/js/cadastro.js" defer></script>
+</head>
+
+<body>
+  <div class="container-fluid p-2 h-100">
+    <div class="row h-100 align-content-start">
+      <div class="col-12 text-center">
+        <h1 class="display-5">Cadastro</h1>
+      </div>
+      <div class="col-12">
+
+      </div>
+      <div class="col-12">
+        <form id="cadastro">
+          <input type="text" class="form-control mb-2" placeholder="Nome" name="nome" id="nome">
+          <input type="text" class="form-control mb-2" placeholder="Nome de Usuário" name="usu" id="usu">
+          <div class="form-row">
+            <div class="col-6">
+              <input type="number" class="form-control" placeholder="Idade" name="idade" id="idade">
+            </div>
+            <div class="col-6">
+              <select class="form-control mb-2" name="sexo" id="sexo">
+                <option value="n" selected>Sexo</option>
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+                <option value="o">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-6"><input type="number" class="form-control" placeholder="Altura (cm)" name="altura"
+                id="altura"></div>
+            <div class="col-6"><input type="number" class="form-control" placeholder="Peso (kg)" name="peso" id="peso">
+            </div>
+          </div>
+          <hr>
+          <input type="password" class="form-control mb-2" placeholder="Senha" id="pw" name="pw">
+          <input type="password" class="form-control" placeholder="Confirme sua Senha" id="pw2" name="pw2">
+          <a href="#" class="btn btn-success btn-block mt-4 mb-2" id="btnConfirmar">Confirmar</a>
+        </form>
+      </div>
+      <div class="col-12 navFill"></div>
+    </div>
+    <div class="row fixed-bottom nav-bottom text-center nav-bg">
+      <div class="col-2">
+        <a href="./index.html"><i class="fas fa-arrow-left fa-2x text-dark"></i></a>
+      </div>
+      <div class="col-8"></div>
+      <div class="col-2">
+      </div>
+    </div>
+  </div>
+
+  <script src="res/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="res/js/popper.min.js"></script>
+  <script src="res/js/bootstrap.min.js"></script>
+  <script src="res/js/fontawesome.js"></script>
+
+</body>
+
+</html>

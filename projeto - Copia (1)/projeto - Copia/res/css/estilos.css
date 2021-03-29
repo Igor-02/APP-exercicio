@@ -1,0 +1,115 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.preto{
+  color: #212529 !important;
+}
+
+.nav-bottom{
+  height: 45px;
+  align-items: center;
+  align-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.nav-bg{
+  background-color: rgb(231, 231, 231);
+  border-top: 1px solid rgb(201, 201, 201);
+}
+
+.navFill{
+  height: 45px;
+}
+
+.exSelecionado {
+  background-color: rgb(209, 255, 209) !important;
+}
+
+.deleteIcon{
+  width: 25px;
+  font-size: 1.7em;
+}
+
+.editIcon{
+  width: 25px;
+  font-size: 1.7em;
+}
+
+.itemLista{
+  padding: 10px;
+  background-color: #fff;
+  border: solid rgba(0, 0, 0, 0.125);
+  border-width: 1px 0;
+}
+
+.colNome {
+  -ms-flex: 0 0 74%;
+  flex: 0 0 74%;
+  max-width: 74%;
+}
+
+.colBotao {
+  -ms-flex: 0 0 13%;
+  flex: 0 0 13%;
+  max-width: 13%;
+}
+
+.colIMC {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.imc{
+  border-top: 1px solid grey;
+  margin-top: 10px;
+}
+
+.imc1{
+  height: 20px;
+  background-color: rgb(255, 255, 0);
+  border: solid black;
+  border-width: 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.imc2{
+  height: 20px;
+  background-color: rgb(0, 209, 0);
+  border: solid black;
+  border-width: 1px 1px 1px 0;
+}
+
+.imc3{
+  height: 20px;
+  background-color: rgb(255, 174, 0);
+  border: solid black;
+  border-width: 1px 1px 1px 0;
+}
+
+.imc4{
+  height: 20px;
+  background-color: rgb(255, 81, 0);
+  border: solid black;
+  border-width: 1px 1px 1px 0;
+}
+
+.imc5{
+  height: 20px;
+  background-color: rgb(255, 0, 0);
+  border: solid black;
+  border-width: 1px 1px 1px 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
